@@ -293,17 +293,17 @@
                     <form id="contactForm" action="sendMail.php" method="post">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <input class="form-control" id="name" type="text" name="txtNombre" placeholder="Enter your name..." required />
                             <label for="name">Nombre completo:</label>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <input class="form-control" id="phone" name="txtTelefono" type="tel" placeholder="(123) 456-7890" oninput="restrict(this);" maxlength="15" required/>
                             <label for="phone">Télefono:</label>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <textarea class="form-control" name="txtMensaje" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                             <label for="message">Mensaje:</label>
                         </div>
                         <button class="btn btn-primary btn-xl" id="btnEnviar" type="submit">Enviar</button>
@@ -562,6 +562,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+
+    <script>
+        function restrict(tis) {
+            var prev = tis.getAttribute("data-prev");
+            prev = (prev != '') ? prev : '';
+            if (Math.round(tis.value * 100) / 100 != tis.value)
+                tis.value = prev;
+            tis.setAttribute("data-prev", tis.value)
+        }
+    </script>
 
 
 </body>
