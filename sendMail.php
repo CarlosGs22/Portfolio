@@ -25,8 +25,6 @@ if ($txtNombre != null && $txtmessage != null && $txtTelefono != null) {
     $res =  "Ocurrió un error";
 }
 
-$mail->Body = 'This is Test Mail';
-
 echo "<script>
 alert('" . $res .  "');
 window.location.href='/Portfolio/';
