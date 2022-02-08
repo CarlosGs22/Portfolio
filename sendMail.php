@@ -1,17 +1,35 @@
 <?php
 
+$txtNombre = $_POST["txtNombre"];
+$txtmessage = $_POST["txtMensaje"];
+$txtTelefono = $_POST["txtTelefono"];
 
-$headers =  'MIME-Version: 1.0' . "\r\n"; 
-$headers .= 'From: Your name <carlosgs.trejo@gmail.com>' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+$res = "";
 
-$to = "gustavo.trejo@uteq.edu.mx";
-$subject = "OK";
-$body = "OK";
+if ($txtNombre != null && $txtmessage != null && $txtTelefono != null) {
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    $from = "admin_car@carksystems.com";
+    $to = "carlosgs.trejo@gmail.com";
+    $subject = "Nuevo mensaje desde carksystems.com";
+    $message = $txtNombre . " " . $txtTelefono .  "\n" . $txtmessage;
+    $headers = "From:" . $from;
+
+    if (mail($to, $subject, $message, $headers)) {
+        $res = "Muchas gracias por contactarte , en breve me contactaré contigo";
+    } else {
+        $res =  "Ocurrió un error interno";
+    }
+} else {
+    $res =  "Ocurrió un error";
+}
 
 
-mail($to, $subject, $body, $headers);
-
+echo "<script>
+alert('" . $res .  "');
+window.location.href='/Portfolio/';
+</script>";
 
 
 ?>
