@@ -27,6 +27,52 @@
         image-rendering: pixelated;
         image-rendering: -webkit-optimize-contrast;
     }
+    
+    .col-detail {
+        text-align: initial;
+    }
+    
+    .img-detail {
+        width: 100%;
+        height: 300px;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    
+    .app-img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    
+    .txtSkills {
+        color: #1abc9c !important;
+    }
+    
+    .img-icon {
+        width: 38%;
+        height: 75px;
+    }
+    
+    .rowicon {
+        justify-content: center;
+    }
+    
+    #skills {
+        border-bottom: 7px solid #1abc9c;
+    }
+    
+    .rowplus {
+        margin: 50px;
+    }
+    
+    .imgmine {
+        border-radius: 50%;
+        border: 4px solid white;
+    }
 </style>
 
 <body id="page-top">
@@ -42,6 +88,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Acerca de mi</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Conocimiento</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
                 </ul>
             </div>
@@ -51,7 +98,7 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+            <img class="masthead-avatar mb-5 imgmine" src="assets/img/portfolio/car.jpg" alt="..." />
             <!-- Masthead Heading-->
             <h1 class="masthead-heading text-uppercase mb-0">Carlos Bárcenas</h1>
             <!-- Icon Divider-->
@@ -62,13 +109,14 @@
             </div>
             <!-- Masthead Subheading-->
             <p class="masthead-subheading font-weight-light mb-0">Desarrollador de sistemas</p>
+            <p class="masthead-subheading font-weight-light mb-0">+52 442 126 6067</p>
         </div>
     </header>
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portafolio</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -76,7 +124,7 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center rowplus">
                 <!-- Portfolio Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5 h-100">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
@@ -105,30 +153,22 @@
                     </div>
                 </div>
                 <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 h-100">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 h-100 text-center">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-size" src="assets/img/portfolio/game.png" alt="..." />
+                        <img class="img-size" src="assets/img/portfolio/iconoInmobired.png" alt="..." style="width: 37%; height: 120px;" />
                     </div>
                 </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0 h-100">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-size" src="assets/img/portfolio/safe.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4 h-100">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-size" src="assets/img/portfolio/submarine.png" alt="..." />
+            </div>
+            <div class="row rowicon m-4">
+
+                <div class="col-12col-sm-12 col-md-6 col-lg-6 text-center rowicon">
+                    <strong>Participación en:</strong>
+                    <div class="list-group list-group-horizontal rowicon">
+                        <a href="https://oncenoticias.digital/" class="list-group-item">Once noticias</a>
+                        <a href="https://vivirenorlando.com/" class="list-group-item">Vivir en orlando</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +178,7 @@
     <section class="page-section bg-primary text-white mb-0" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de mi</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -148,25 +188,98 @@
             <!-- About Section Content-->
             <div class="row">
                 <div class="col-lg-4 ms-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                    <p class="lead">Hola bienvenido a mi perfil. Mi nombre es Carlos Bárcenas, tengo 23 años y soy ingeniero graduado en Tecnologias de la Información. Soy programador de sistemas hace aproximadamente 4 años, tengo amplia experiencia en el área de programación
+                        de software y estoy muy interesado en realizar tu proyecto.</p>
                 </div>
                 <div class="col-lg-4 me-auto">
-                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                    <p class="lead">Me caracteriza mi adaptabilidad, mejoramiento continuo, orientación a resultados y capacidad de análisis. Me he desempeñado en desarrollo, soporte e implementación de tecnologías en diferentes sitios/sistemas de información.</p>
                 </div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                    <i class="fas fa-download me-2"></i> Free Download!
+                <a class="btn btn-xl btn-outline-light" href="#">
+                    <i class="fas fa-download me-2"></i> ¿Tienes algun proyecto en el que te pueda ayudar? </br>¡No dudes en contactarme!
                 </a>
             </div>
         </div>
     </section>
+
+    <!-- SKills Section-->
+    <section class="page-section  text-white mb-0" id="skills">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-secondary text-uppercase">Conocimientos</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom txtSkills">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-12 ms-auto">
+                    <div class="row rowicon">
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/codeighniter.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/laravel.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/cake.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/jquery.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/bootstrap.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/jsp.png" alt="..." />
+                        </div>
+                    </div>
+
+                    <div class="row rowicon">
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/android.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/Flutter.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/git.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/github.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/powerbi.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/mysql.png" alt="..." />
+                        </div>
+                    </div>
+
+                    <div class="row rowicon">
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/wordpress.png" alt="..." />
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 text-center">
+                            <img class="img-size rounded mb-5 img-icon" src="assets/icons/css.png" alt="..." />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
     <!-- Contact Section-->
     <section class="page-section" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -177,26 +290,23 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
 
-                    <form id="contactForm">
+                    <form id="contactForm" action="sendMail.php" method="post">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                             <label for="name">Nombre completo:</label>
-
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                             <label for="phone">Télefono:</label>
-
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                             <label for="message">Mensaje:</label>
-
                         </div>
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                        <button class="btn btn-primary btn-xl" id="btnEnviar" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -241,11 +351,12 @@
     </div>
     <!-- Copyright Section-->
     <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -259,14 +370,34 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-size rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                <img class="img-size rounded mb-5 img-detail" src="assets/img/portfolio/emporiodetail.PNG" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-detail">
+                                        Emporio Pizza es una solución basada en la web dirigida a restaurantes, servicios de comida rápida y/o actividades similares. La función de este sistema es automatizar/digitalizar las tareas en cuanto al manejo de datos de una empresa.
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-detail">
+                                        <strong>Caracteristicas</strong>
+                                        <ul>
+                                            <li>Proveedores</li>
+                                            <li>Inventarios</li>
+                                            <li>Clientes</li>
+                                            <li>Nivel de permisos por usuario</li>
+                                            <li>Menús</li>
+                                            <li>Productos</li>
+                                            <li>Pagos en linea</li>
+                                            <li>Reportes ventas/compras</li>
+                                            <li>Multisucursal</li>
+                                            <li>Punto de venta en linea</li>
+                                            <li>Coberturas de venta</li>
+                                            <li>Etc</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <small><strong>Usuario : carlos@gmail.com </br> Contraseña: 123456789</strong></small>
+                                </br>
+                                <a href="http://pizzacdr.carksystems.com/" class="btn btn-primary">Enlace Emporio Pizza</a>
                             </div>
                         </div>
                     </div>
@@ -274,17 +405,18 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 2-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Cubo UNICEQ</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -292,14 +424,29 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-size rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                <img class="img-size rounded mb-5 img-detail" src="assets/img/portfolio/uniceqdetail.PNG" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-detail">
+                                        Implementación de una plataforma web para la Gestión de indicadores y/o datos estadísticos que ayude a agilizar y optimizar de manera eficiente los procesos de creación, consulta y actualización de los mismos.
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-detail">
+                                        <strong>Caracteristicas</strong>
+                                        <ul>
+                                            <li>Animaciones 3D</li>
+                                            <li>Gráfica de indicadores</li>
+                                            <li>Gráfica de conexiones</li>
+                                            <li>Gestión de indicadores</li>
+                                            <li>Niveles de aprendizaje</li>
+                                            <li>Nivel de permisos por usuario</li>
+                                            <li>Etc</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <small><strong>Usuario : paulino </br> Contraseña: 12345</strong></small>
+                                </br>
+                                <a href="http://uniceq.carksystems.com" class="btn btn-primary">Enlace UNICEQ</a>
                             </div>
                         </div>
                     </div>
@@ -307,7 +454,6 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 3-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -317,7 +463,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Landing page inmobired</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -325,14 +471,26 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-size rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                <img class="img-size rounded mb-5 img-detail" src="assets/img/portfolio/inmobireddetail.PNG" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-detail">
+                                        InmobiRed empresa Mexicana, dedicada al desarrollo de tecnología Exclusiva para el uso y beneficio de Asesores Inmobiliarios.
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-detail">
+                                        <strong>Secciones</strong>
+                                        <ul>
+                                            <li>Nosotros</li>
+                                            <li>Servicios</li>
+                                            <li>Galerias</li>
+                                            <li>Contacto</li>
+                                            <li>Enlaces</li>
+                                            <li>Etc</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="https://inmobired.mx/" class="btn btn-primary">Enlace InmobiRed</a>
                             </div>
                         </div>
                     </div>
@@ -340,32 +498,57 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 4-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
+        <div class="modal-dialog modal-xl ">
+            <div class="modal-content ">
+                <div class="modal-header border-0 ">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+
+                    </button></div>
+                <div class="modal-body text-center pb-5 ">
+                    <div class="container ">
+                        <div class="row justify-content-center ">
+                            <div class="col-lg-8 ">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 ">App inmobired</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
+                                <div class="divider-custom ">
+                                    <div class="divider-custom-line "></div>
+                                    <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
+                                    <div class="divider-custom-line "></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-size rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                <div class="row ">
+
+                                    <div class="col 6 ">
+                                        <img class="i rounded mb-5 app-img " src="assets/img/portfolio/applogin.png " alt="... " />
+                                    </div>
+
+                                    <div class="col-6 ">
+                                        <img class="i rounded mb-5 app-img " src="assets/img/portfolio/app.PNG " alt="... " />
+                                    </div>
+
+                                </div>
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                <div class="row ">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-detail ">
+                                        App para inmobiliarios con el fin de optimizar tiempo y acelerar ventas haciendo negocio entre distintos tipos de inmuebles.
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-detail ">
+                                        <strong>Secciones</strong>
+                                        <ul>
+                                            <li>Matches</li>
+                                            <li>Crear ofertas</li>
+                                            <li>Crear requerimientos</li>
+                                            <li>Exportacion</li>
+                                            <li>Busquedas</li>
+                                            <li>Catálogos</li>
+                                            <li>Etc</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="https://play.google.com/store/apps/details?id=mx.inmobired.inmobired&hl=es_MX&gl=US " class="btn btn-primary ">Enlace App InmobiRed</a>
                             </div>
                         </div>
                     </div>
@@ -373,76 +556,13 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-size rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-size rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Cerrar
-                                    </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
 
 </body>
 
