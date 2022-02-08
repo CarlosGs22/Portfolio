@@ -27,7 +27,7 @@ if ($txtNombre != null && $txtmessage != null && $txtTelefono != null) {
 
 echo "<script>
 alert('" . $res .  "');
-window.location.href='/Portfolio/';
+window.location.href='/Portafolio/';
 </script>";
 
 
